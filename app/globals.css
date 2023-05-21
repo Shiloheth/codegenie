@@ -5,24 +5,15 @@
 
 *{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body{
   font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
-[data-theme="Light"] {
-  background-color: #ffffff;
-  color: #000000;
-  --p: #ffffff
 
-}
-
-[data-theme="Dark"] {
-  background-color: #111;
-  color: #ffffff;
-  --p: #111
-}
 
 .theme{
 padding: 6px;
@@ -38,45 +29,17 @@ border-color: gray;
 
 
 .light{
-  background-color: #eaeaea;
+  background-color: #f7f4f3;
   border: 1px;
   border-radius: 9999px;
-
 }
 
 
 
 .dark{
- background-color: #333333;
+ background-color: #000000;
  border: 1px;
  border-radius: 9999px;
-
+ color: #f7f4f3;
 }
-
-button{
-  background: var(--p);
-  border: 0;
-
-}
-
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  font-size: 1.2rem;
-  border-bottom: 1px solid #35383f;
-  padding-bottom: 1px;
-}
-
-.Questions{
-  background-color: #282a36;
-  padding: 0px;
-  display: inline-block;
-  width: auto;
-
-}
-
-
 

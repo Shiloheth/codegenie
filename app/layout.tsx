@@ -13,10 +13,10 @@ export default function RootLayout({children,}: {children: React.ReactNode }) {
       {children}
       <script
           dangerouslySetInnerHTML={{
-            __html: `if (localStorage.theme === "Dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-              document.documentElement.setAttribute("data-theme", "Dark");
+            __html: `if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+              document.documentElement.classList.add('dark');
           } else {
-              document.documentElement.setAttribute("data-theme", "Light");
+            document.documentElement.classList.add('light')
           }`
           
             }}
